@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Builder | Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🧾 Resume Builder</div>
+    <ul class="nav-links">
+      <li>Home</li>
+      <li>Categories</li>
+      <li>Explore</li>
+      <li>History</li>
+      <li><img src="assets/user-icon.png" alt="Profile" class="icon"/></li>
+    </ul>
+  </nav>
+
+  <!-- Welcome + Search -->
+  <section class="welcome">
+    <h2>Welcome back, User(name)!</h2>
+    <p>Pick a template to start building your resume.</p>
+    <div class="search-filter">
+      <input type="text" id="searchTemplates" placeholder="Search templates..." />
+      <select id="filterCategory">
+        <option value="">All Categories</option>
+        <option value="fresher">Fresher</option>
+        <option value="experienced">Experienced</option>
+        <option value="creative">Creative</option>
+        <option value="minimal">Minimal</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Templates Grid -->
+  <section class="templates">
+    <div class="template-card popular">Temp1 <span class="tag">Popular</span></div>
+    <div class="template-card">Temp2</div>
+    <div class="template-card">Temp3</div>
+    <div class="template-card">Temp4 <span class="tag">New</span></div>
+    <div class="template-card">Temp5</div>
+    <div class="template-card">Temp6</div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 resumebuilder.com</p>
+  </footer>
+
+  <script src="js/home.js"></script>
+</body>
+</html>

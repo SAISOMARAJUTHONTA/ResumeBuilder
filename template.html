@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose a Resume Template</title>
+  <link rel="stylesheet" href="css/template_styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="dashboard-header">
+    <div class="logo">🧾 ResumeBuilder</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Home</a></li>
+        <li><a href="#">My Resumes</a></li>
+        <li><a href="#">Templates</a></li>
+        <li><a href="home.html">Logout</a></li>
+      </ul>
+    </nav>
+    <div class="user-profile">
+      <img src="img28.jpg" alt="User" class="user-image" />
+      <div class="dropdown">
+        <button class="dropbtn">▼</button>
+        <div class="dropdown-content">
+          <a href="#">Profile</a>
+          <a href="#">Settings</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Welcome + Search -->
+    <section class="welcome">
+      <h2>Welcome back, User(name)!</h2>
+      <p>Pick a template to start building your resume.</p>
+      <div class="search-filter">
+        <input type="text" id="searchTemplates" placeholder="Search templates..." />
+        <select id="filterCategory">
+          <option value="">All Categories</option>
+          <option value="fresher">Fresher</option>
+          <option value="experienced">Experienced</option>
+          <option value="creative">Creative</option>
+          <option value="minimal">Minimal</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Template Gallery Section -->
+<section class="template-gallery-section">
+  <h2>Choose a Resume Template</h2>
+  <div class="template-gallery">
+    <img src="templates/temp_1.png" alt="Template 1" onclick="selectTemplate('templates/temp_1.png')">
+    <img src="templates/temp_2.png" alt="Template 2" onclick="selectTemplate('templates/temp_2.png')">
+    <img src="templates/temp_3.jpeg" alt="Template 3" onclick="selectTemplate('templates/temp_3.jpeg')">
+    <img src="templates/temp_4.jpeg" alt="Template 4" onclick="selectTemplate('templates/temp_4.jpeg')">
+    <img src="templates/temp_5.jpeg" alt="Template 5" onclick="selectTemplate('templates/temp_5.jpeg')">
+    <img src="templates/temp_6.png" alt="Template 6" onclick="selectTemplate('templates/temp_6.png')">
+    <img src="templates/temp_7.png" alt="Template 7" onclick="selectTemplate('templates/temp_7.png')">
+    <img src="templates/temp_8.png" alt="Template 8" onclick="selectTemplate('templates/temp_8.png')">
+    <img src="templates/temp_9.jpeg" alt="Template 9" onclick="selectTemplate('templates/temp_9.jpeg')">
+    <img src="templates/temp_10.jpeg" alt="Template 10" onclick="selectTemplate('templates/temp_10.jpeg')">
+    <img src="templates/temp_11.jpeg" alt="Template 11" onclick="selectTemplate('templates/temp_11.jpeg')">
+    <img src="templates/temp_12.png" alt="Template 12" onclick="selectTemplate('templates/temp_12.png')">
+  </div>
+</section>
+  </main>
+
+  <script src="js/templates.js"></script>
+</body>
+</html>

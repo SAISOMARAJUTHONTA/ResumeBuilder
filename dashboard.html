@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard_styles.css" />
+</head>
+<body>
+  <header class="dashboard-header">
+    <div class="logo">🧾  ResumeBuilder</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Home</a></li>
+        <li><a href="myResumes.html">My Resumes</a></li>
+        <li><a href="template.html">Templates</a></li>
+        <li><a href="home.html">Logout</a></li>
+      </ul>
+    </nav>
+    <div class="user-profile">
+      <img src="img28.jpg" alt="User" class="user-image" />
+      <div class="dropdown">
+        <button class="dropbtn">▼</button>
+        <div class="dropdown-content">
+          <a href="#">Profile</a>
+          <a href="#">Settings</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard-content">
+    <h1>Welcome to Your Dashboard</h1>
+    <p>Start building your professional resume by choosing a template.</p>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>Start New Resume</h3>
+        <p>Create a brand-new resume from scratch.</p>
+        <a href="template.html" class="btn">Start Building</a>
+      </div>
+      <div class="card">
+        <h3>View Saved Resumes</h3>
+        <p>Access the resumes you've already worked on.</p>
+        <a href="#" class="btn">View Resumes</a>
+      </div>
+    </div>
+    <!-- New Templates Section -->
+    <section class="templates">
+      <h2>Select a Resume Template</h2>
+      <div class="template-gallery">
+        <img src="templates/temp_1.png" alt="Template 1" onclick="selectTemplate('temp_1.jpeg')">
+        <img src="templates/temp_2.png" alt="Template 2" onclick="selectTemplate('temp_2.png')">
+        <img src="templates/temp_3.jpeg" alt="Template 3" onclick="selectTemplate('temp_3.jpeg')">
+      </div>
+    </section>
+  </main>
+  <script src="js/dashboard_script.js"></script>
+</body>
+</html>

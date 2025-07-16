@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resume Preview | Resume Builder</title>
+  <link rel="stylesheet" href="css/preview_styles.css" />
+</head>
+<body>
+  <div class="resume-container" id="resumePreview">
+    <h2 id="name"></h2>
+    <p id="email"></p>
+    <p id="phone"></p>
+
+    <hr />
+
+    <h3>Education</h3>
+    <p><strong id="degree"></strong> - <span id="education"></span> (<span id="year"></span>)</p>
+    <hr />
+
+    <h3>Skills</h3>
+    <ul id="skillsList"></ul>
+    <hr />
+
+    <h3>Projects</h3>
+    <ul id="projectsList"></ul>
+    <hr />
+    <h3>Achievements</h3>
+    <ul id="achievementsList"></ul>
+  </div>
+
+  <div class="preview-actions">
+    <button onclick="window.location.href='form.html'">Edit</button>
+    <button onclick="downloadPDF()">Download PDF</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="js/preview.js"></script>
+</body>
+</html>

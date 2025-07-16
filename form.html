@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resume Form | Resume Builder</title>
+  <link rel="stylesheet" href="css/f_styles.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Build Your Resume</h2>
+
+    <form id="resumeForm">
+      <!-- Personal Info -->
+      <h3>Personal Information</h3>
+      <input type="text" placeholder="Full Name" name="name" required />
+      <input type="email" placeholder="Email" name="email" required />
+      <input type="text" placeholder="Phone Number" name="phone" required />
+
+      <!-- Education -->
+      <h3>Education</h3>
+      <input type="text" placeholder="College/School Name" name="education" required />
+      <input type="text" placeholder="Degree / Standard" name="degree" required />
+      <input type="text" placeholder="Year of Passing" name="year" required />
+
+      <!-- Skills -->
+      <h3>Skills</h3>
+      <div id="skillsContainer">
+        <input type="text" name="skills[]" placeholder="Skill" />
+      </div>
+      <button type="button" onclick="addSkill()">+ Add Skill</button>
+
+      <!-- Projects -->
+      <h3>Projects</h3>
+      <div id="projectsContainer">
+        <input type="text" name="projects[]" placeholder="Project Title" />
+      </div>
+      <button type="button" onclick="addProject()">+ Add Project</button>
+
+      <!-- Achievements -->
+      <h3>Achievements</h3>
+      <div id="achievementsContainer">
+        <input type="text" name="achievements[]" placeholder="Achievement" />
+      </div>
+      <button type="button" onclick="addAchievement()">+ Add Achievement</button>
+
+      <!-- Submit -->
+      <button type="submit">Preview Resume</button>
+    </form>
+  </div>
+
+  <script src="js/form.js"></script>
+</body>
+</html>
